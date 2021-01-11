@@ -1,0 +1,200 @@
+  
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    .navbar {
+        width: 100% !important;
+        background-color: black;
+    }
+    /* Container holding the image and the text */
+    .containerImg {
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+    }
+
+    /* Centered text */
+    .centered {
+    width: 35%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    padding: 5px;
+    }
+
+
+    #formimage {
+        width: 45%;
+    }
+
+    .footer {
+      width: 100%;
+    }
+    .icons > a {
+      margin: 2.5px;
+    }
+
+    .footer > div {
+        margin: 20px;
+    }
+
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Noorani</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- mr auto float left mx auto in the middle -->
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a href="./getOffer.html" class="nav-link" href="#">Get an offer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        
+        <div class="containerImg">
+            <img id="formimage" src="./bldng.jpg" alt="building"">
+            <div class="centered">We would like to buy your house today! <br></div>
+
+       </div>
+       <div class="row getoffer mx-auto">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-sm-4">
+                  <label for="inputfName">First name</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-sm-4">
+                  <label for="inputlName">Last name</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+              </div>
+            <div class="form-row">
+              <div class="form-group col-xl-12">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-4">
+                  <label for="inputNumber">Phone number</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="444-222-111">
+                </div>
+              </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-sm-4">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Atlanta">
+              </div>
+              <div class="form-group col-sm-4">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip" placeholder="00000">
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-4">
+                  <label for="inputPrice">Asking Price</label>
+                  <input type="text" class="form-control" id="inputCity" placeholder="$">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputCondition">Condition</label>
+                    <select id="inputCondition" class="form-control">
+                      <option selected>Choose...</option>
+                      <option value="new">New</option>
+                      <option value="needs work">Needs work</option>
+                      <option value="falling apart">Falling Apart</option>
+                    </select>
+                  </div>
+              </div>
+
+
+            <button type="submit" class="btn btn-dark">Give me an offer!</button>
+          </form>
+       </div>
+      </div>
+      <div class="footer">
+        <div class="row mx-auto" style="width: 260px">
+          <h1>678-543-1242</h1>
+        </div>
+        <div class="icons row mx-auto" style="width: 160px">
+          <a href="facebook.com"
+            ><img src="https://img.icons8.com/android/48/000000/facebook-new.png"
+          /></a>
+          <a href="facebook.com"
+            ><img
+              src="https://img.icons8.com/fluent-systems-filled/48/000000/instagram-new.png"
+          /></a>
+          <a href="facebook.com"
+            ><img src="https://img.icons8.com/android/48/000000/twitter.png"
+          /></a>
+        </div>
+        <div class="row mx-auto" style="width: 200px">
+          <a href="/contact"><h1>Contact Us</h1></a>
+        </div>
+      </div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script>
+
+		// When you click the savenote button
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</body>
+
+</html>
