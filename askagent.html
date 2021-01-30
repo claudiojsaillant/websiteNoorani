@@ -14,31 +14,7 @@
         background-color: black;
     }
 
-    /* Container holding the image and the text */
-    .containerImg {
-        margin-top: 30px;
-        position: relative;
-        text-align: center;
-    }
 
-    /* Centered text */
-    .centered {
-        width: 35%;
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 20px;
-        background-color: black;
-        padding: 5px;
-    }
-
-
-    #formimage {
-        margin: 20px;
-        width: 45%;
-    }
 
     .footer {
         width: 100%;
@@ -63,12 +39,12 @@
         text-align: center;
     }
 
-    #agent {
-        width: 80%;
+    .agent {
+        width: 350px
     }
 
-    #number {
-        width: 400px;
+    .number {
+        width: 350px;
         text-align: center;
         margin-top: 20%;
     }
@@ -96,6 +72,10 @@
         margin-bottom: 85px;
     }
 
+    .col {
+        flex-grow: 0;
+        }
+
 
 
     @media screen and (max-width: 450px) {
@@ -114,6 +94,8 @@
     div > a {
       margin-left: 18%;
     }
+
+  
 
 
 
@@ -152,18 +134,21 @@
         <h1 id="title">Want to list your home, or find a new one?</h1>
         <div class="row">
             <div class="col">
-                <img id="agent" src="./agent.jpg" alt="agent">
+                <img class="agent" src="./agent.jpg" alt="agent">
             </div>
-            <div id="number" class="col">
-                <h2>Call John at 770-692-0492</h2>
+            <div class="number" class="col">
+                <h4>Call Noorani at 404-921-4746 </h4>
+                <h4>nooranirealestate@nooranire.com </h4>
             </div>
+            
         </div>
         <div class="row">
             <div class="col">
-                <img id="agent" src="./agent.jpg" alt="agent">
+                <img class="agent" src="./agent.jpg" alt="agent">
             </div>
-            <div id="number" class="col">
-                <h2>Call John at 770-692-0492</h2>
+            <div class="number" class="col">
+                <h4>Call Navel Noorani at 404-924-5599</h4>
+                <h4>Nabeel@nooranire.com</h4>
             </div>
         </div>
 
