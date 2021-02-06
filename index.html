@@ -7,8 +7,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 <style>
+  .parallax-container {
+	position: relative;
+	overflow: hidden;
+	height: 500px
+}
+
+.parallax-container .parallax {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1
+}
+
+.parallax-container .parallax img {
+	opacity: 0;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%)
+}
+
   .navbar {
     width: 100% !important;
     background-color: black;
@@ -69,6 +98,10 @@
     margin-bottom: 3%;
   }
 
+  #bottomPara {
+    margin-top: 15px;
+  }
+
   @media screen and (max-width: 450px) {
     form {
       width: 300px;
@@ -96,7 +129,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="/websiteNoorani">Noorani Real State</a>
+    <a class="navbar-brand" href="/websiteNoorani">Noorani Real Estate</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -121,6 +154,12 @@
       </ul>
     </div>
   </nav>
+
+  <div class="parallax-container">
+    <div class="parallax"><img src="./bldng.jpg"></div>
+  </div>
+
+
   <div class="container">
 
     <div class="containerImg">
@@ -194,6 +233,9 @@
       </form>
     </div>
   </div>
+  <div id="bottomPara" class="parallax-container">
+    <div class="parallax"><img src="./bldng.jpg"></div>
+  </div>
   <div class="process mx-auto" style="width: 350px;">
 
     <h3>Our Process</h3>
@@ -238,6 +280,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./index.js"></script>
 
 </body>

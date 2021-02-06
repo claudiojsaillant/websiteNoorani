@@ -1,3 +1,8 @@
+$(document).ready(function(){
+    $('.parallax').parallax();
+  });
+
+
 $("#formBtn").on("click", (e) => {
   e.preventDefault();
   console.log("clicked");
