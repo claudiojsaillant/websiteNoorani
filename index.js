@@ -34,7 +34,7 @@ $("#formBtn").on("click", (e) => {
   if (validated) {
     Email.send({
       SecureToken: "920f2acf-42ab-4351-89c5-9e75a8170398",
-      To: "claudiojsaillant@gmail.com",
+      To: "nooranirealestate@nooranire.com",
       From: "nooraniforms@gmail.com",
       Subject: "Form submitted (Home offer)",
       Body: str,
