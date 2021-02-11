@@ -102,9 +102,21 @@
     margin-top: 15px;
   }
 
+  #logo {
+      width: 100%;
+    }
+
+    #logodiv {
+      width: 35%;
+      margin: 0 auto;
+    }
+
   @media screen and (max-width: 450px) {
     form {
       width: 300px;
+    }
+    #logodiv {
+      margin-top: 15%;
     }
 
     h1,h2,h3,h4 {
@@ -121,6 +133,10 @@
 
     div > a {
       margin-left: 18%;
+    }
+
+    #logodiv {
+      width: 40%;
     }
   }
 
@@ -155,14 +171,14 @@
     </div>
   </nav>
 
-  <div class="parallax-container">
-    <div class="parallax"><img src="./bldng.jpg"></div>
+  <div class="mx-auto" id="logodiv">
+    <img id="logo" src="./logo.jpg" alt="logo" />
   </div>
 
 
   <div class="container">
 
-    <div class="containerImg">
+    <div class="containerImg mx-auto">
       <img id="formimage" src="./banner.jpg" alt="building">
     </div>
     <div id="title" class="row">
