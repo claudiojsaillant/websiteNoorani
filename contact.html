@@ -22,7 +22,6 @@
     }
     .navbar {
       width: 100% !important;
-      background-color: black;
     }
     /* Container holding the image and the text */
     .containerImg {
@@ -74,6 +73,20 @@
         height: 100px;
     }
 
+    #navimg {
+      width: 55%;
+      margin: 0 auto;
+    }
+
+    #navli {
+     width: 25%; 
+     MARGIN: 0 AUTO;
+    }
+
+    .getoffer {
+      margin: 30px;
+    }
+
     @media screen and (max-width: 600px) {
     form, #textArea {
         width: 300px;
@@ -102,43 +115,39 @@
   </style>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="/websiteNoorani">Noorani Real Estate</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- <a class="navbar-brand" href="/websiteNoorani">Noorani Real Estate</a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+  
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- mr auto float left mx auto in the middle -->
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
+          <li class="navbar-brand">
             <a href="https://claudiojsaillant.github.io/websiteNoorani/" class="nav-link" href="./">Get an offer</a>
           </li>
-          <li class="nav-item active">
+          <li class="navbar-brand active">
             <a class="nav-link" href="https://claudiojsaillant.github.io/websiteNoorani/contact.html">Contact</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="https://claudiojsaillant.github.io/websiteNoorani/properties.html">Properties</a>
+          <li id="navli" class="navbar-brand">
+            <div class="mx-auto" style="width: 400px;">
+              <img id="navimg" src="./logo.jpg" alt="">
+            </div>
+         
           </li>
-          <li class="nav-item">
+          <li class="navbar-brand">
+            <a class="nav-link" href="https://claudiojsaillant.github.io/websiteNoorani/properties.html">Properties</a>
+          </li>
+          <li class="navbar-brand">
             <a class="nav-link" href="https://claudiojsaillant.github.io/websiteNoorani/askagent.html">Ask an agent</a>
-        </li>
-          
+          </li>
+  
         </ul>
       </div>
     </nav>
     <div class="container">
-      <div class="mx-auto" id="logodiv">
-        <img id="logo" src="./logo.jpg" alt="logo" />
-      </div>
 
       <div class="row getoffer mx-auto">
         <form>
