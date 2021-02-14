@@ -7,36 +7,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <script src="https://kit.fontawesome.com/e94cfefb1d.js" crossorigin="anonymous"></script>
 </head>
 <style>
   .parallax-container {
-	position: relative;
-	overflow: hidden;
-	height: 500px
-}
+    position: relative;
+    overflow: hidden;
+    height: 500px
+  }
 
-.parallax-container .parallax {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: -1
-}
+  .parallax-container .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1
+  }
 
-.parallax-container .parallax img {
-	opacity: 0;
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	min-width: 100%;
-	min-height: 100%;
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%)
-}
+  .parallax-container .parallax img {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+  }
 
   .navbar {
     width: 100% !important;
@@ -107,24 +107,45 @@
   }
 
   #logo {
-      width: 100%;
-    }
+    width: 100%;
+  }
 
-    #logodiv {
-      width: 35%;
-      margin: 0 auto;
-    }
+  #logodiv {
+    width: 35%;
+    margin: 0 auto;
+  }
 
-    #navimg {
-      width: 55%;
-      margin: 0 auto;
-    }
+  #navimg {
+    width: 55%;
+    margin: 0 auto;
+  }
 
-    #navli {
-     width: 25%; 
-     MARGIN: 0 AUTO;
-    }
+  #navli {
+    width: 25%;
+    MARGIN: 0 AUTO;
+  }
 
+  #footer {
+    color: white;
+    background: black;
+    height: 6.5%;
+    left: 0;
+    right: 0;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    opacity: 0.75;
+  }
+
+  .footeritem {
+    margin-top: 4.5%;
+    
+  }
+
+  .footeritem > a {
+    color: white;
+  }
 
 
 
@@ -132,23 +153,30 @@
     form {
       width: 300px;
     }
+
     #logodiv {
       margin-top: 15%;
     }
 
-    h1,h2,h3,h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
       font-size: 25px;
 
     }
-    p, label,li {
+
+    p,
+    label,
+    li {
       font-size: 15px;
     }
 
     #formimage {
-      margin: 30px;
+      margin: 0 auto
     }
 
-    div > a {
+    div>a {
       margin-left: 18%;
     }
 
@@ -156,10 +184,13 @@
       width: 40%;
     }
 
+    #navli {
+      margin: 0;
+      margin-left: 20%;
+    }
+
 
   }
-
-
 </style>
 
 <body>
@@ -183,7 +214,7 @@
           <div class="mx-auto" style="width: 400px;">
             <img id="navimg" src="./logo.jpg" alt="">
           </div>
-       
+
         </li>
         <li class="navbar-brand">
           <a class="nav-link" href="https://claudiojsaillant.github.io/websiteNoorani/properties.html">Properties</a>
@@ -200,7 +231,21 @@
     <img id="logo" src="./logo.jpg" alt="logo" />
   </div> -->
 
+  <div id="footer" data-role="footer" data-position="fixed" data-corners="false">
+    <div class="container">
+      <div class="row">
+        <div class="footeritem col">
+          <a href="mailto:claudiojsaillant@gmail.com">Email us! <i class="far fa-envelope"></i></a>
+          
 
+        </div>
+        <div class="footeritem col">
+          <a href="tel:404-921-4746">Call us! <i class="fas fa-phone-square-alt"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
   <div class="container">
 
     <div class="containerImg mx-auto">
@@ -288,20 +333,19 @@
     </ol>
 
   </div>
+
+
   <div class="footer">
     <div class="mx-auto">
       <h1 id="phoneNum">404-921-4746</h1>
     </div>
     <div class="icons row mx-auto" style="width: 120px">
-      <a href="https://www.facebook.com/NooraniRE/"  target="_blank"
-        ><img src="https://img.icons8.com/android/48/000000/facebook-new.png"
-      /></a>
-      <a href="https://www.instagram.com/nooranire/"  target="_blank"
-        ><img
-          src="https://img.icons8.com/fluent-systems-filled/48/000000/instagram-new.png"
-      /></a>
+      <a href="https://www.facebook.com/NooraniRE/" target="_blank"><img
+          src="https://img.icons8.com/android/48/000000/facebook-new.png" /></a>
+      <a href="https://www.instagram.com/nooranire/" target="_blank"><img
+          src="https://img.icons8.com/fluent-systems-filled/48/000000/instagram-new.png" /></a>
     </div>
-    <div class="row mx-auto" style="width: 200px">
+    <div class="contact row mx-auto" style="width: 200px">
       <a href="/websiteNoorani/contact.html">
         <h1>Contact Us</h1>
       </a>

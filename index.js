@@ -1,5 +1,30 @@
+var w = window.innerWidth;
+var h = window.innerHeight;
+var scrolling;
+
+
+
+if(w <= 460){
+  $(window).scroll(function() {
+      clearTimeout(scrolling);
+      $("#footer").hide();
+      scrolling = setTimeout(function(){$("#footer").show();},100);
+  });
+} else {
+  $("#footer").remove();
+}
+
+window.onscroll = function(ev) {
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    $("#footer").hide();
+    clearInterval(scrolling);
+  }
+};
+
 $(document).ready(function(){
     $('.parallax').parallax();
+
+
   });
 
 
